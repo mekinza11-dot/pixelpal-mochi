@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
+<div class="game">
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">YOUR LITTLE DIGITAL FRIEND</div>
+      <h1>Pixel<span>Pal</span> ✨</h1>
+    </div>
+    <div class="wallet">🪙 <b id="coins">0</b></div>
+  </header>
+
+  <section class="pet-card">
+    <div class="level-row">
+      <span id="stage">BABY PAL</span>
+      <span id="level">LEVEL 1</span>
+    </div>
+
+    <div class="scene" id="scene">
+      <div class="star star1">✦</div>
+      <div class="star star2">✧</div>
+      <div class="star star3">✦</div>
+      <div class="cloud cloud1">☁</div>
+      <div class="cloud cloud2">☁</div>
+
+      <div id="pet" class="pet">
+        <div class="pet-emoji" id="petEmoji">🐣</div>
+        <div id="accessory" class="accessory"></div>
+        <div class="shadow"></div>
+      </div>
+
+      <div id="speech" class="speech">Hiii! I'm your new friend!</div>
+      <div class="ground"></div>
+    </div>
+
+    <h2 id="petName">Mochi</h2>
+    <p id="mood">Happy to meet you! 💗</p>
+
+    <div class="xp-label">
+      <span>Evolution progress</span>
+      <span id="xpText">0 / 100 XP</span>
+    </div>
+    <div class="progress"><div id="xpBar"></div></div>
+  </section>
+
+  <section class="stats">
+    <div class="stat">
+      <span>🍓</span><span>Hunger</span>
+      <b id="hungerText">80%</b>
+      <div class="meter"><div id="hungerBar"></div></div>
+    </div>
+    <div class="stat">
+      <span>💗</span><span>Happiness</span>
+      <b id="happyText">80%</b>
+      <div class="meter"><div id="happyBar"></div></div>
+    </div>
+    <div class="stat">
+      <span>⚡</span><span>Energy</span>
+      <b id="energyText">80%</b>
+      <div class="meter"><div id="energyBar"></div></div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h3>💕 Spend time together</h3>
+    <div class="actions">
+      <button class="action pink" id="feedBtn">
+        <span>🍓</span>Feed
+      </button>
+      <button class="action purple" id="playBtn">
+        <span>🎾</span>Play
+      </button>
+      <button class="action yellow" id="petBtn">
+        <span>🤗</span>Cuddle
+      </button>
+      <button class="action blue" id="sleepBtn">
+        <span>🌙</span>Rest
+      </button>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h3>🎀 Dress up your pal</h3>
+    <p class="hint">Unlock accessories with coins!</p>
+    <div class="wardrobe" id="wardrobe"></div>
+  </section>
+
+  <section class="panel mini-panel">
+    <div>
+      <h3>🎯 Catch the Star</h3>
+      <p class="hint">Catch a star to win bonus coins!</p>
+    </div>
+    <button id="gameBtn" class="primary">Play mini-game →</button>
+  </section>
+
+  <div id="miniGame" class="mini-game hidden">
+    <div class="mini-header">
+      <div>
+        <h3>Catch the Star ⭐</h3>
+        <p id="gameInfo">Click 5 stars before time runs out!</p>
+      </div>
+      <button id="closeGame" class="close-btn">✕</button>
+    </div>
+    <div id="playArea" class="play-area">
+      <span id="target" class="target">⭐</span>
+    </div>
+    <div class="game-footer">
+      <span id="score">Caught: 0 / 5</span>
+      <span id="timer">⏱ 15s</span>
+    </div>
+    <button id="startGame" class="primary">Start playing!</button>
+  </div>
+
+  <footer>
+    <span>Made with 💗 and a little magic</span>
+    <button id="resetBtn" class="reset">Start a new life ↻</button>
+  </footer>
+</div>
+
+<div id="toast" class="toast"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
